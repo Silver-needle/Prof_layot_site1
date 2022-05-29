@@ -31,6 +31,7 @@
    display: flex;
    justify-content: space-between;
    list-style-type: none;
+   position: relative;
 }
 .zoom__menu {
    transition: transform 0.1s;
@@ -40,23 +41,27 @@
 }
 .logo__icon {
    padding-top: 19px;
+   padding-right: 20px;
 }
 .search__icon {
    padding-top: 28px;
-   padding-left: 41px;
+   padding-left: 21px;
 }
 .menu__icon {
    padding-top: 30px;
    padding-bottom: 22px;
+   padding-left: 30px;
+   padding-right: 12px;
 }
 .account__icon {
    padding-top: 26px;
-   padding-left: 25px;
+   padding-left: 12px;
+   padding-right: 21px;
 }
 .backet__icon {
    padding-top: 26px;
-   padding-right: 12px;
-   padding-left: 42px;
+   padding-right: 20px;
+   padding-left: 21px;
 }
 
 .left__elements {
@@ -105,6 +110,7 @@ a {
 .close__submenu {
    margin-left: 180px;
    top: 16px;
+   padding: 20px;
 }
 .submenu > .menu__icon {
    color: rgb(30, 53, 156);
@@ -142,12 +148,15 @@ a {
    background-image: url(img/banner.png);
    background-repeat: no-repeat;
 }
+.banner__text {
+   width: 50%;
+}
 .heading__h1 {
    font-family: Lato_h1;
    font-size: 48px;
-   top: 365px;
-   position: absolute;
-   left: 50%;
+   top: 200px;
+   /*position: absolute;*/
+   /*left: 50%;*/
    padding-left: 16px;
 }
 .heading__h2 {
@@ -155,18 +164,19 @@ a {
    font-size: 36px;
    line-height: 58px;
    top: 416px;
-   position: absolute;
+   /*position: absolute;*/
    flex-grow: 1;
-   left: 50%;
+   /*left: 50%;*/
    padding-left: 16px;
 }
 .fashion__color {
    color: #f16d7f;
 }
 .color__line {
-   position: absolute;
-   left: 50%;
-   top: 365px;
+   /*position: absolute;*/
+   /*left: 50%;*/
+   padding-top: 365px;
+   padding-right: 3px;
 }
 
 .goods {
@@ -225,6 +235,7 @@ h3 {
    background-image: url(img/kid.png);
    height: 260px;
    width: 360px;
+
    text-align: center;
    font-size: 10px;
    display: flex;
