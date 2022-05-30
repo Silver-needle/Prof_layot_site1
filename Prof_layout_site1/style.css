@@ -84,12 +84,12 @@
 .submenu {
    background: white;
    position: absolute;
-   top: 66px;
+   top: 60px;
    padding-left: 34px;
-   padding-top: 16px;
+   padding-top: 10px;
    z-index: 5;
-   width: 232px;
-   height: 493px;
+   width: 200px;
+   height: 515px;
    opacity: 0;
    transform: scaleY(0);
    transform-origin: 0 0;
@@ -98,6 +98,7 @@
    list-style-type: none;
    font-size: 14px;
    display: block;
+   margin-left: -100px;
 }
 a {
    text-decoration: none;
@@ -105,12 +106,10 @@ a {
 }
 .sub-item__submenu {
    margin-left: 20px;
-   margin-bottom: 6px;
+   margin-bottom: 8px;
 }
 .close__submenu {
-   margin-left: 180px;
-   top: 16px;
-   padding: 20px;
+   margin-left: 150px;
 }
 .submenu > .menu__icon {
    color: rgb(30, 53, 156);
@@ -265,4 +264,49 @@ h4 {
    color: #9f9f9f;
    text-align: center;
    margin-bottom: 48px;
+}
+.wrapper__items {
+   height: 750px;
+   background-color: #f3eded;
+   margin-bottom: 49px;
+}
+.behind__button {
+   display: flex;
+   flex-direction: column;
+}
+.button_1 {
+   font-size: 18px;
+   font-family: Lato_h2;
+   font-weight: 400;
+   line-height: 19px;
+   text-align: center;
+   
+   color: #FFFFFF;
+   padding: 18px 38px;
+   background: #f16d7f;
+   text-decoration: none;
+   display: inline-block;
+   align-self: center;
+   margin-bottom: 96px;
+   width: 211px;
+}
+.benefits__background {
+   background-color: #222224;
+   
+}
+.benefits {
+height: 341px;
+}
+.background__image {
+   height: 448px;
+   background-repeat: no-repeat;
+   background-image: url(img/bcg\ image.png);
+background-position: center;
+}
+.footer__background {
+   background-color: #222224;
+   
+}
+.footer {
+height: 79px;
 }
