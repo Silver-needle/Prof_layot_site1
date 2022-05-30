@@ -177,9 +177,6 @@ a {
 .color__line {
    padding-top: 365px;
    padding-right: 3px;
-   
-   
-   
 }
 
 .goods {
@@ -261,6 +258,9 @@ h4 {
    height: 36px;
    text-align: center;
 }
+ul {
+   list-style-type: none;
+}
 .items__text {
    font-family: Lato_h2;
    font-weight: 400;
@@ -284,8 +284,8 @@ h4 {
    font-weight: 400;
    line-height: 19px;
    text-align: center;
-   
-   color: #FFFFFF;
+
+   color: #ffffff;
    padding: 18px 38px;
    background: #f16d7f;
    text-decoration: none;
@@ -296,31 +296,96 @@ h4 {
 }
 .benefits__background {
    background-color: #222224;
-   
 }
 .benefits {
-height: 341px;
+   height: 341px;
    align-items: center;
    justify-content: center;
    display: flex;
    flex-wrap: wrap;
 }
-ul {
-   list-style-type: none;
-}
 .background__image {
    height: 448px;
    background-repeat: no-repeat;
    background-image: url(img/bcg\ image.png);
-background-position: center;
-box-shadow: inset 0 0 0 100vw rgba(244, 244, 244, 0.7);
+   background-position: center;
+   box-shadow: inset 0 0 0 100vw rgba(244, 244, 244, 0.7);
+}
+.subscribe {
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.appeal1 {
+   margin-top: 97px;
+}
+.photo {
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+.appeal__text1 {
+   width: 359px;
+   font-size: 20px;
+   font-family: Lato_p;
+   color: #000;
+   font-weight: 700;
+}
+.appeal2 {
+   margin-top: 150px;
+}
+.appial__heading {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 167.2%;
+   color: #222224;
+   font-family: Lato_h2;
+}
+.appeal__text2 {
+   font-family: Lato_p;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 167.2%;
+   text-align: center;
+   color: #222224;
+}
+.input {
+   width: 100px;
+   height: 49px;
+}
+.input__text {
+   display: flex;
+}
+form input:required {
+   width: 322px;
+   height: 49px;
+   background-color: #e1e1e1;
+   border: 0 none;
+   border-radius: 25px 0 0 25px;
+   text-align: left;
+   font-family: Lato_p;
+   font-size: 14px;
+   font-weight: 400;
+}
+input[type="submit"] {
+   margin: 0;
+   padding: 5px 15px;
+   width: 100px;
+   height: 49px;
+   background-color: #e05c6e;
+   border: 0 none;
+   cursor: pointer;
+   border-radius: 0 25px 25px 0;
+   font-family: Lato_p;
+   font-size: 14px;
+   font-weight: 400;
 }
 .footer__background {
    background-color: #222224;
-   
 }
 .footer {
-height: 90px;
+   height: 90px;
 }
 .benefit {
    height: 126px;
@@ -331,36 +396,36 @@ height: 90px;
    flex-direction: column;
 }
 .benefit__text {
-width: 360px;
-font-family: Lato_p;
-font-size: 14px;
-line-height: 24px;
-color: #FBFBFB;
-;
+   width: 360px;
+   font-family: Lato_p;
+   font-size: 14px;
+   line-height: 24px;
+   color: #fbfbfb;
 }
 .benefit__h5 {
    font-size: 20px;
    color: white;
    font-family: Lato_h2;
+   font-weight: 400;
 }
 .benefit__icon1 {
-padding-bottom: 28px;
+   padding-bottom: 28px;
 }
 .benefit__icon2 {
-padding-bottom: 19px;
+   padding-bottom: 19px;
 }
 .benefit__icon3 {
-padding-bottom: 25px;
+   padding-bottom: 25px;
 }
 .footer__content {
    display: flex;
    justify-content: space-between;
 }
 .rights {
-padding-top: 30px;
-font-family: Lato_h2;
-font-size: 16px;
-color: white;
+   padding-top: 30px;
+   font-family: Lato_h2;
+   font-size: 16px;
+   color: white;
 }
 .social__nw {
    display: flex;
@@ -368,24 +433,23 @@ color: white;
    flex-direction: row;
    margin-top: 24px;
    margin-right: 16px;
-text-align: center;
-
+   text-align: center;
 }
 .social__nw1 {
-height: 32px;
-width: 32px;
-background-color: #fff;
-margin: 8px;
-background-image: url(img/facebook1.png);
-background-repeat: no-repeat;
-background-position: center;
+   height: 32px;
+   width: 32px;
+   background-color: #fff;
+   margin: 8px;
+   background-image: url(img/facebook1.png);
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 .social__nw1:hover {
    background: #f16d7f;
    background-image: url(img/facebook2.png);
    background-repeat: no-repeat;
-background-position: center;
+   background-position: center;
 }
 .social__nw2 {
    height: 32px;
@@ -395,43 +459,43 @@ background-position: center;
    background-image: url(img/insta1.png);
    background-repeat: no-repeat;
    background-position: center;
-   }
-   
-   .social__nw2:hover {
-      background: #f16d7f;
-      background-image: url(img/insta2.png);
-      background-repeat: no-repeat;
+}
+
+.social__nw2:hover {
+   background: #f16d7f;
+   background-image: url(img/insta2.png);
+   background-repeat: no-repeat;
    background-position: center;
-   }
-   .social__nw3 {
-      height: 32px;
-      width: 32px;
-      background-color: #fff;
-      margin: 8px;
-      background-image: url(img/pinterest1.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      }
-      
-      .social__nw3:hover {
-         background: #f16d7f;
-         background-image: url(img/pinterest2.png);
-         background-repeat: no-repeat;
-      background-position: center;
-      }
-      .social__nw4 {
-         height: 32px;
-         width: 32px;
-         background-color: #fff;
-         margin: 8px;
-         background-image: url(img/twitter1.png);
-         background-repeat: no-repeat;
-         background-position: center;
-         }
-         
-         .social__nw4:hover {
-            background: #f16d7f;
-            background-image: url(img/twitter2.png);
-            background-repeat: no-repeat;
-         background-position: center;
-         }
+}
+.social__nw3 {
+   height: 32px;
+   width: 32px;
+   background-color: #fff;
+   margin: 8px;
+   background-image: url(img/pinterest1.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.social__nw3:hover {
+   background: #f16d7f;
+   background-image: url(img/pinterest2.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.social__nw4 {
+   height: 32px;
+   width: 32px;
+   background-color: #fff;
+   margin: 8px;
+   background-image: url(img/twitter1.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.social__nw4:hover {
+   background: #f16d7f;
+   background-image: url(img/twitter2.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
