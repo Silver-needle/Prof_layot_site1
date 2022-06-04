@@ -590,3 +590,45 @@ input[type="submit"] {
    background-repeat: no-repeat;
    background-position: center;
 }
+/*! Page Registration */
+.bcg__registration__block {
+   background-color: #F8F3F4;
+   height: 148px;
+}
+.registration__block {
+   padding-top: 59px;
+   font-family: Lato_h2;
+   font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+color: #F16D7F;
+}
+fieldset {
+   width: 360px;
+   border: none;
+}
+label {
+   font-family: Lato_p;
+   font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+color: #222222;
+}
+.reg__form {
+   background-color: #fff;
+   border: #9f9f9f;
+}
+form input [type=reg__form]:required {
+   width: 322px;
+   height: 49px;
+   background-color: #b6b322;
+   border: 0 none;
+   text-align: left;
+   font-family: Lato_p;
+   font-size: 14px;
+   font-weight: 400;
+}
+input[type="reg"] {
+   background-color: #fff;
+   border: #9f9f9f;
+}
