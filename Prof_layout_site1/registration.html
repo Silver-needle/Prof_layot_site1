@@ -63,32 +63,49 @@
          </div>
       </div>
       <div class="container">
+      <div class="wrapper__body">
          <form action="#">
             <fieldset>
-               <label for="name">Your Name</label>
-               <input id="name" class="reg__form" type="text" placeholder="First Name" autofocus="" required=""
+               <div class="heading__h4">Your Name</div>
+               <input id="name" class="reg__form" type="text" placeholder="      First Name" autofocus="" required=""
                   pattern="\S+[A-Za-zА-Яа-яЁё]">
                <br>
-               <input id="name" class="reg__form" type="text" placeholder="Last Name" required=""
+               <input id="name" class="reg__form" type="text" placeholder="      Last Name" required=""
                   pattern="\S+[A-Za-zА-Яа-яЁё]">
                <br>
-               <label for="turist">
-                  <input id="turist" type="checkbox"> Male</label>
-               <label for="turist">
-                  <input id="turist" type="checkbox"> Femail</label>
+               <div class="radio">
+                  <input id="male" type="radio" name="gender" value="male">
+                  <label for="male">Male</label>
+                  <input id="female" type="radio" name="gender" value="female">
+                  <label for="female">Female</label>
+                 <input id="other" type="radio" name="gender" value="other">
+                  <label for="other">Other</label>
+              </div>
                <br>
-               <label for="email">Login details</label>
-               <input id="email" placeholder="Email" required="" pattern="\S+@[a-z]+.[a-z]+">
+               <div class="heading__h4">Login details</div>
                <br>
-
-               <input id="userPassword" placeholder="Password" type="password">
+               <input id="email" class="reg__form" placeholder="     Email" required="" pattern="\S+@[a-z]+.[a-z]+">
                <br>
-               <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+               <input id="userPassword" class="reg__form" placeholder="    Password" type="password">
+               <br>
+               <p class="instruction">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
                   letters
                </p>
-               <input type="submit" value="Subscribe">
+               <input type="submit" class="submit2" value="  JOIN NOW   &rarr;">
             </fieldset>
          </form>
+         <div class="text__field">
+            <h2 class="perks__heading">LOYALTY HAS ITS PERKS</h2>
+            <p class="reg__appeal">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul class="reg__perks">
+            <li class="reg__perk">15% off welcome offer</li>
+            <li class="reg__perk">Free shipping, returns and exchanges on all orders</li>
+            <li class="reg__perk">$10 off a purchase on your birthday</li>
+            <li class="reg__perk">Early access to products</li>
+            <li class="reg__perk">Exclusive offers & rewards</li>
+         </ul>
+         </div>
+      </div>
       </div>
       <div class="background__image">
          <div class="container">
