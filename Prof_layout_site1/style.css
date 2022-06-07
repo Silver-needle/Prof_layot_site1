@@ -452,7 +452,8 @@ margin-top: 6px;
 .input__text {
    display: flex;
 }
-form input:required {
+/*form input:required {}*/
+.form__input{
    width: 322px;
    height: 49px;
    background-color: #e1e1e1;
@@ -463,7 +464,8 @@ form input:required {
    font-size: 14px;
    font-weight: 400;
 }
-input[type="submit"] {
+/*input[type="submit"]*/ 
+.submit {
    margin: 0;
    padding: 5px 15px;
    width: 100px;
@@ -617,6 +619,17 @@ color: #222222;
 .reg__form {
    background-color: #fff;
    border: #9f9f9f;
+   border: 1px solid #a4a4a4;
+   width: 360px;
+   height: 45px;
+   font-size: 13px;
+   font-weight: 300;
+   line-height: 16px;
+   color: #b1b1b1;
+   margin-top: 21px;
+   display: flex;
+   flex-direction: column;
+
 }
 form input [type=reg__form]:required {
    width: 322px;
