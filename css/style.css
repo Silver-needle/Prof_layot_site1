@@ -971,14 +971,54 @@ ul.breadcrumb li a:hover {
   margin-bottom: 65px;
 }
 
+.filters {
+  display: inline;
+  font-size: 18px;
+  font-family: Lato_h2;
+  color: #6F6E6E;
+  display: flex;
+  justify-content: center;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: url(../css/img/button\ for\ filters.png);
+  padding-right: 0.5em;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+details[open] > summary::after {
+  content: url(../css/img/button\ for\ filters.png);
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 .add-box-prod {
   width: 211px;
   height: 47px;
   border: 1px solid #f16d7f;
   text-align: center;
-  align-items: center;
   display: inline-block;
-  align-self: center;
   margin-top: 49px;
   margin-bottom: 65px;
+}
+
+.add-prod {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+}
+
+.add-desc-prod {
+  padding-left: 12px;
 }
