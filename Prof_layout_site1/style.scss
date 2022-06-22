@@ -21,7 +21,6 @@ $fashion-color: #f16d7f;
 }
 .menu__wrapper {
    background-color: #222222;
-   position: sticky;
    top: 0;
 }
 .container {
@@ -810,10 +809,19 @@ ul.breadcrumb {
    background-color:#d8d8d8;
    position: absolute;
    margin-top: 365px;
-   text-align: center;
    align-items:center;
    display: flex;
    justify-content: center;
+   
+}
+.fa-solid {
+   transform: scale(1.6);
+   color: #000;
+   padding: 5px;
+}
+.fa-solid:hover {
+   color: $fashion-color;
+   padding: 5px;
 }
 .slide {
    margin-left: 28%;
@@ -832,32 +840,56 @@ margin-bottom: 129px;
 }
 .section-header {
    margin-top: 64px;
+   font-family: Lato_p;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: $fashion-color;
 }
 .horizontal-divider1 {
    margin-top: 12px;
    margin-bottom: 12px;
 }
 .subtitle {
+   font-family: Lato_p;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+color: #4D4D4D;
+margin-bottom: 48px;
 }
 .section-text {
+   max-width: 49%;
+   font-family: Lato_p;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #5E5E5E;
+margin-left: 24%;
+text-align: center;
+
 }
 .section-price {
    margin-top: 32px;
+   font-family: Lato_p;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: $fashion-color;
 }
 .horizontal-divider2 {
 margin-top: 65px;
 margin-bottom: 65px;
 }
-.filters {
-   display: inline;
-   font-size: 18px;
-   font-family: Lato_h2;
-   color: #6F6E6E;
-   display: flex;
-   justify-content: center;
-}
 summary {
    display: block;
+   margin-left: 10px;
+   margin-right: 20px;
+   list-style-type: none;
  }
  
    summary::-webkit-details-marker {
@@ -865,23 +897,90 @@ summary {
  }
  
  summary::after {
-   content: url(../css/img/button\ for\ filters.png);
    padding-right: 0.5em;
    margin-left: 10px;
    margin-right: 20px;
  }
- 
+ .details {
+ }
+
+ input[type="checkbox"] {
+   display: none;
+}
+label:before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   margin-right: 10px;
+   left: 0;
+   bottom: 1px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+}
+.checkbox label:before {
+   border-radius: 8px;
+}
+input[type="checkbox"]:checked + label:before {
+   content: "\2022";
+   color: $fashion-color;
+   font-size: 30px;
+   text-align: center;
+   line-height: 18px;
+}*/
+ .filter-items {
+   display: flex;
+   flex-direction: row;
+ }
  details[open] > summary::after {
-   content: url(../css/img/button\ for\ filters.png);
    margin-left: 10px;
    margin-right: 20px;
  }
-.color-filter {
-}
-.size-filter {
-}
-.quantity-filter {
-}
+ .icon-angle-down {
+   transform: rotate(-90deg) scale(1.0);
+   color: #6F6E6E;
+  bottom: -15px;
+  padding-left: 10px;
+ }
+
+
+ .filters {
+   justify-content: space-between;
+   width: 400px;
+   margin-top: 65px;
+   display: inline;
+   font-size: 18px;
+   font-family: Lato_h2;
+   color: #6F6E6E;
+   display: flex;
+   justify-content: center;
+ }
+ .filter-items {
+   display: block;
+ }
+ .filter-elements {
+   display: flex;
+   flex-direction: column;
+   z-index: 3;
+   box-shadow: 3px 3px 3px;
+   margin-top: 5px;
+ }
+ .checkboxes {
+   padding-left: 5px;
+   width: 79px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #6F6E6E;
+   margin-top: 6px;
+ }
+ .checkbox-style {
+   border: 1px solid #EBEBEB;
+   margin-left: 9px;
+   margin-bottom: 11px;
+ }
+
+
 .add-box-prod {
    width: 211px;
    height: 47px;

@@ -22,8 +22,6 @@
 
 .menu__wrapper {
   background-color: #222222;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
 }
 
@@ -932,10 +930,20 @@ ul.breadcrumb li a:hover {
   background-color: #d8d8d8;
   position: absolute;
   margin-top: 365px;
-  text-align: center;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.fa-solid {
+  transform: scale(1.6);
+  color: #000;
+  padding: 5px;
+}
+
+.fa-solid:hover {
+  color: #f16d7f;
+  padding: 5px;
 }
 
 .slide {
@@ -955,6 +963,12 @@ ul.breadcrumb li a:hover {
 
 .section-header {
   margin-top: 64px;
+  font-family: Lato_p;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
 }
 
 .horizontal-divider1 {
@@ -962,8 +976,36 @@ ul.breadcrumb li a:hover {
   margin-bottom: 12px;
 }
 
+.subtitle {
+  font-family: Lato_p;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  margin-bottom: 48px;
+}
+
+.section-text {
+  max-width: 49%;
+  font-family: Lato_p;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5E5E;
+  margin-left: 24%;
+  text-align: center;
+}
+
 .section-price {
   margin-top: 32px;
+  font-family: Lato_p;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
 }
 
 .horizontal-divider2 {
@@ -982,6 +1024,9 @@ ul.breadcrumb li a:hover {
 
 summary {
   display: block;
+  margin-left: 10px;
+  margin-right: 20px;
+  list-style-type: none;
 }
 
 summary::-webkit-details-marker {
@@ -989,16 +1034,54 @@ summary::-webkit-details-marker {
 }
 
 summary::after {
-  content: url(../css/img/button\ for\ filters.png);
   padding-right: 0.5em;
   margin-left: 10px;
   margin-right: 20px;
 }
 
+input[type=radio] {
+  display: none;
+}
+
+label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  left: 0;
+  bottom: 1px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+}
+
+.radio label:before {
+  border-radius: 8px;
+}
+
+input[type=radio]:checked + label:before {
+  content: "•";
+  color: #f16d7f;
+  font-size: 30px;
+  text-align: center;
+  line-height: 18px;
+}
+
+.filter-items {
+  display: flex;
+  flex-direction: row;
+}
+
 details[open] > summary::after {
-  content: url(../css/img/button\ for\ filters.png);
   margin-left: 10px;
   margin-right: 20px;
+}
+
+.icon-angle-down {
+  transform: rotate(-90deg) scale(1);
+  color: #6F6E6E;
+  bottom: -15px;
+  padding-left: 10px;
 }
 
 .add-box-prod {

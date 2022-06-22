@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/ef3da1f7f4.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="../css/style.css">
    <link rel="icon" href="../css/img/favicon.svg" type="image/x-icon">
    <title>Product</title>
@@ -71,9 +72,9 @@
       </div>
       <div class="slider">
          <ul class="slider-buttons">
-            <li class="button-before"><img src="../css/img/button-before1.png" alt="button-before"></li>
+            <li class="button-before"><a href="#"><i class="fa-solid fa-angle-left"></i></a></li>
             <li><img src="../css/img/prod-slide1.png" class="slide" alt="slide-1"></li>
-            <li class="button-after"><img src="../css/img/button-after2.png" alt="button-after"></li>
+            <li class="button-after"><a href="#"><i class="fa-solid fa-angle-right"></i></a></li>
          </ul>
       </div>
       <div class="container">
@@ -82,29 +83,106 @@
                <h4 class="section-header">WOMEN COLLECTION</h4>
                <img src="../css/img/horizontal_divider1.png" class="horizontal-divider1" alt="horizontal_divider1">
                <p class="subtitle">MOSCHINO CHEAP AND CHIC</p>
-               <p class="section-text">Compellingly actualize fully researched processes before proactive outsourcing.
+               <p class="section-text">Compellingly actualize fully researched processes before proactive outsourcing. <br>
                   Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
                   parallel core competencies rather than exceptional portals.</p>
                <p class="section-price">$561</p>
                <img src="../css/img/horizontal_divider2.png" class="horizontal-divider2" alt="horizontal_divider2">
                <ul class="filters">
                   <li>
-                     <details class="color-filter"><summary>CHOOSE COLOR</summary>
+                     <details class="color-filter"><summary><ul class="filter-items"><li><p>CHOOSE COLOR</p></li>
+                     <li><i class="fa-solid fa-angle-left icon-angle-down"></i></li></ul></summary>
+                     <ul class="filter-elements"><li><label for="color">BLACK</label></li>
+                     <li><label for="color">
+                        <input id="brown" type="checkbox"> BROWN</label></li>
+                     <li><label for="color">
+                        <input id="white" type="checkbox"> WHITE</label></li>
+                     <li><label for="color">
+                        <input id="blue" type="checkbox"> BLUE</label></li></ul>
                      </details>
                   </li>
                   <li>
-                     <details class="size-filter"><summary>CHOOSE SIZE</summary>
+                     <details class="filter"><summary class="filter-items">CHOOSE SIZE</summary>
+                        <div class="size_checkbox">
+                            <label class="label_size"><input class="checkbox_style" type="checkbox">&nbsp XS</label>
+                            <label class="label_size"><input class="checkbox_style" type="checkbox">&nbsp S</label>
+                            <label class="label_size"><input class="checkbox_style" type="checkbox">&nbsp M</label>
+                            <label class="label_size"><input class="checkbox_style" type="checkbox">&nbsp L</label>
+                        </div>
                      </details>
                   </li>
                   <li>
-                     <details class="quantity-filter"><summary>QUANTITY</summary>
+                     <details class="quantity-filter"><summary><ul class="filter-items"><li><p>QUANTITY</p></li>
+                        <li><i class="fa-solid fa-angle-left icon-angle-down"></i></li></ul></summary>
                      </details>
                   </li>
                </ul>
+               <form class="filters">
+                  <details class="size-filter">
+                      <summary class="filter-items">CHOOSE COLOR</summary>
+                  </details>
+                  <details class="size_box">
+                      <summary class="filter-items">CHOOSE SIZE</summary>
+                      <div class="filter-elements">
+                          <label class="checkboxes"><input class="checkbox-style" type="checkbox">&nbsp XS</label>
+                          <label class="checkboxes"><input class="checkbox-style" type="checkbox">&nbsp S</label>
+                          <label class="checkboxes"><input class="checkbox-style" type="checkbox">&nbsp M</label>
+                          <label class="checkboxes"><input class="checkbox-style" type="checkbox">&nbsp L</label>
+                      </div>
+                  </details>
+                  <details class="price_box">
+                      <summary class="trends_box-heading">QUANTITY</summary>
+                  </details>
+              </form>
                <div class="add-box-prod">
                   <a class="add-prod" href="#"><img class="cart2" src="../css/img/backet for goods2.png"
                         alt="backet for goods">
                      <p class="add-desc-prod">Add to Cart</p>
+                  </a>
+               </div>
+            </div>
+            
+         </div>
+         <div class="item__flex">
+            <div class="item">
+               <a class="item__link" href="#"><img class="item__pic" src="../css/img/card4.png" alt="card4">
+               <div class="txt__box">
+                  <h5 class="item__h5">ELLERY X M'O CAPSULE</h5>
+                  <p class="item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <p class="item__price">$52.00</p>
+               </div>
+               </a>
+               <div class="add-box">
+                  <a class="add" href="#"><img class="cart" src="../css/img/backet for goods.png" alt="backet for goods">
+                  <p class="add-desc">Add to Cart</p>
+                  </a>
+               </div>
+            </div>
+            <div class="item">
+               <a class="item__link" href="#"><img class="item__pic" src="../css/img/card5.png" alt="card5">
+               <div class="txt__box">
+                  <h5 class="item__h5">ELLERY X M'O CAPSULE</h5>
+                  <p class="item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <p class="item__price">$52.00</p>
+               </div>
+               </a>
+               <div class="add-box">
+                  <a class="add" href="#"><img class="cart" src="../css/img/backet for goods.png" alt="backet for goods">
+                  <p class="add-desc">Add to Cart</p>
+                  </a>
+               </div>
+            </div>
+            <div class="item">
+               <a class="item__link" href="#"><img class="item__pic" src="../css/img/card6.png" alt="card6">
+               <div class="txt__box">
+                  <h5 class="item__h5">ELLERY X M'O CAPSULE</h5>
+                  <p class="item__desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                  <p class="item__price">$52.00</p>
+               </div>
+               </a>
+               <div class="add-box">
+                  <a class="add" href="#"><img class="cart" src="../css/img/backet for goods.png" alt="backet for goods">
+                  <p class="add-desc">Add to Cart</p>
                   </a>
                </div>
             </div>
